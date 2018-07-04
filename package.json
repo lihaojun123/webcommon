@@ -1,0 +1,24 @@
+{
+  "name": "webcommon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lihaojun123/webcommon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lihaojun123/webcommon/issues"
+  },
+  "homepage": "https://github.com/lihaojun123/webcommon#readme",
+  "devDependencies": {
+    "webpack": "^1.15.0",
+    "webpack-command": "^0.4.0"
+  }
+}
