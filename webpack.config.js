@@ -2,7 +2,7 @@
  * @Author: lichangjun 
  * @Date: 2018-07-21 22:23:39 
  * @Last Modified by: lichangjun
- * @Last Modified time: 2018-07-22 03:57:10
+ * @Last Modified time: 2018-07-22 14:20:06
  */
 const path=require("path");
 const webpack=require("webpack");
@@ -27,7 +27,7 @@ module.exports={
     },
     output:{
         path:path.resolve(__dirname, 'dist'),
-        publicPath:'/dist',
+        publicPath:'/dist/',
         filename:"js/[name].js"
     },
     externals:{
@@ -45,6 +45,11 @@ module.exports={
                 
             }
         ]
+    },
+    resolve:{//别名的配置
+      alias:{
+          util:__dirname + "/src/util"
+      }
     },
     plugins:[
         //通用模块的加载
