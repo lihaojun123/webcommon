@@ -2,16 +2,17 @@
  * @Author: lichangjun 
  * @Date: 2018-08-25 00:19:41 
  * @Last Modified by: lichangjun
- * @Last Modified time: 2018-08-26 04:04:15
+ * @Last Modified time: 2018-08-29 01:42:11
  */
-
+console.log(process.env.NODE_ENV);
 let prefix = '/';
 if (process.env.NODE_ENV == "dev") {
     prefix = ''
 }
 let Api = {
     index: {
-        list: prefix + 'api/list/index.json'
+        list: prefix + 'api/index/list',
+        demo: prefix + 'api/address'
     },
     demo: {
         list: 'xx/xx/xx.json',

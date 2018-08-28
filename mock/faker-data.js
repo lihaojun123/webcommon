@@ -1,7 +1,7 @@
 module.exports = function () {
-    let index = require('./index');
+    let homePage = require('./index/index.js');
     let mock = [
-         index(),
+        homePage()
     ]
     return Object.assign({}, ...mock);
 }

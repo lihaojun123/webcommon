@@ -2,7 +2,7 @@
  * @Author: lichangjun 
  * @Date: 2018-08-25 00:30:56 
  * @Last Modified by: lichangjun
- * @Last Modified time: 2018-08-25 00:55:21
+ * @Last Modified time: 2018-08-29 01:36:09
  */
 
 class Request {
@@ -15,7 +15,7 @@ class Request {
                 url: params.url || "",
                 data: params.data || {},
                 dataType: params.dataType || "json",
-                success() {
+                success(res) {
                     if (res.success) {
                         resolve(res)
                     } else {

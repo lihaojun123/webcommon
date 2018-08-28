@@ -2,7 +2,7 @@
  * @Author: lichangjun 
  * @Date: 2018-08-25 00:30:37 
  * @Last Modified by: lichangjun
- * @Last Modified time: 2018-08-25 01:01:50
+ * @Last Modified time: 2018-08-29 01:29:57
  */
 
 import http from 'util/request'
@@ -22,7 +22,7 @@ class Index {
      */
     getNewList(data) {
         return http.ajax({
-            url: api.demo.list,
+            url: api.index.demo,
             data: data
         })
     }

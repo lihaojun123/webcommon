@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --progress --config ./dev-server.js",
     "build": "webpack -p",
-    "mock": "webpack-dev-server --watch mock/index.js",
-    "start": "node ./dev-server.js&webpack-dev-server --inline --hot --open",
-    "mockdev":"npm start | npm run mock"
+    "mock": "json-server --watch mock/faker-data.js -m mock/post-to-get.js -r mock/server-routes.json",
+    "start": "npm run dev",
+    "mockdev": "npm start | npm run mock"
   },
   "repository": {
     "type": "git",
@@ -24,10 +24,12 @@
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
+    "faker": "^4.1.0",
     "file-loader": "1.1.6",
     "glob": "^7.1.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "2.30.1",
+    "json-server": "^0.14.0",
     "less": "^3.7.1",
     "less-loader": "^4.1.0",
     "mockjs": "^1.0.1-beta3",
