@@ -2,7 +2,7 @@
  * @Author: lichangjun 
  * @Date: 2018-07-21 22:23:39 
  * @Last Modified by: lichangjun
- * @Last Modified time: 2018-08-25 01:40:55
+ * @Last Modified time: 2018-08-26 02:06:46
  */
 const path = require("path");
 const webpack = require("webpack");
@@ -70,12 +70,5 @@ module.exports = {
         //打包html
         htmlConfig("index"),
         htmlConfig("login"),
-    ],
-    devServer: {
-        port: 8080,
-        hot: true,
-        open: true,
-        inline: true
-
-    }
+    ]
 }

@@ -2,7 +2,7 @@
  * @Author: lichangjun 
  * @Date: 2018-08-25 00:19:41 
  * @Last Modified by: lichangjun
- * @Last Modified time: 2018-08-25 00:22:42
+ * @Last Modified time: 2018-08-26 04:04:15
  */
 
 let prefix = '/';
@@ -11,7 +11,7 @@ if (process.env.NODE_ENV == "dev") {
 }
 let Api = {
     index: {
-        list: prefix + 'index/list/index.json'
+        list: prefix + 'api/list/index.json'
     },
     demo: {
         list: 'xx/xx/xx.json',

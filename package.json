@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p",
-    "start": "webpack&webpack-dev-server --inline --hot"
+    "mock": "webpack-dev-server --watch mock/index.js",
+    "start": "node ./dev-server.js&webpack-dev-server --inline --hot --open",
+    "mockdev":"npm start | npm run mock"
   },
   "repository": {
     "type": "git",
@@ -23,13 +25,16 @@
     "css-loader": "0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "1.1.6",
+    "glob": "^7.1.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "2.30.1",
     "less": "^3.7.1",
     "less-loader": "^4.1.0",
+    "mockjs": "^1.0.1-beta3",
     "style-loader": "0.19.1",
     "url-loader": "^0.6.2",
     "webpack": "3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^2.9.7",
+    "webpack-merge": "^4.1.4"
   }
 }

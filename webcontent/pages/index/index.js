@@ -2,7 +2,7 @@
  * @Author: lichangjun 
  * @Date: 2018-07-21 21:53:49 
  * @Last Modified by: lichangjun
- * @Last Modified time: 2018-08-25 00:59:01
+ * @Last Modified time: 2018-08-26 04:31:57
  */
 
 import "./index.less"
@@ -11,8 +11,7 @@ import api from "service/index"
 
 
 let data = {
-    a: 1,
-    b: 2
+    
 }
 api.getList(data).then(res => {
     console.log(res);
